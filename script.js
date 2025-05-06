@@ -1,5 +1,7 @@
-// your code here
- document.getElementById('button').addEventListener('click', function () {
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('button');
+    button.addEventListener('click', function () {
       const baseUrl = 'https://localhost:8080/';
       const name = document.getElementById('name').value.trim();
       const year = document.getElementById('year').value.trim();
@@ -13,3 +15,4 @@
 
       document.getElementById('url').textContent = fullUrl;
     });
+  });
